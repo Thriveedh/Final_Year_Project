@@ -193,14 +193,15 @@ if __name__ == "__main__":
             sumA += items[i]
         else:
             sumB += items[i]
-sumA_original = sumA * scale
-sumB_original = sumB * scale
-final_diff_original = np.abs(sumA_original - sumB_original)
-Max_imbalance_original = np.max(final_diff_original)
-print("\nFinal Result")
-print("Items:\n", items)
-print("Partition (0=A, 1=B):", partition)
-print("Sum A:", sumA_original)
-print("Sum B:", sumB_original)
-print("Final imbalance per dimension:", final_diff_original)
+    sumA_original = sumA * scale
+    sumB_original = sumB * scale
+    final_diff_original = np.abs(sumA_original - sumB_original)
+    Max_imbalance_original = np.max(final_diff_original)
+    print("\nFinal Result")
+    print("Items:\n", items)
+    print("Partition (0=A, 1=B):", partition)
+    print("Sum A:", sumA_original)
+    print("Sum B:", sumB_original)
+    print("Final imbalance per dimension:", final_diff_original)
+
 print("Max imbalance (original scale):", Max_imbalance_original)
